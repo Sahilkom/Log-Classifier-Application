@@ -1,0 +1,119 @@
+body {
+  background: #f6f8fa;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+}
+
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.container h1 {
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+}
+
+.upload-section {
+  margin-bottom: 2rem;
+}
+.upload-section input[type="file"] {
+  margin-right: 1rem;
+}
+.upload-section button {
+  padding: 0.5rem 1.5rem;
+  background: #646cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.upload-section button:disabled {
+  background: #b3b3b3;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #e53e3e;
+  margin-bottom: 1rem;
+}
+
+.result-section {
+  margin: 2rem 0 1.5rem 0;
+}
+.result-section h2 {
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+.table-wrapper {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+th,
+td {
+  border: 1px solid #e2e8f0;
+  color: #2d3748;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+th {
+  background: #f1f5f9;
+  color: #2d3748;
+}
+tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+.actions-section {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.download-btn {
+  padding: 0.5rem 1.5rem;
+  background: #38a169;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-right: 1rem;
+  transition: background-color 0.2s;
+}
+.download-btn:hover {
+  background: #2f855a;
+  color: #fff;
+}
+.regenerate-btn {
+  padding: 0.5rem 1.5rem;
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.regenerate-btn:hover {
+  background: #2b6cb0;
+}
+
+.footer-signature {
+  margin-top: 2rem;
+  color: #606060;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
